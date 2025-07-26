@@ -1,94 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anmol Dobariya - Looking for a Life Partner</title>
-  <style>
-    /* Clean, modern CSS */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.7;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      color: #333;
-      background-color: #f9f9fb;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
-    }
-    .footer {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #666;
-      border-top: 1px solid #eee;
-      padding-top: 15px;
-    }
-    .highlight {
-      background-color: #eef7fa;
-      padding: 15px;
-      border-left: 4px solid #3498db;
-      margin: 20px 0;
-      font-style: italic;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anmol Dobariya - Looking for a Life Partner</title>
 
-  <div class="header">
-    <h1>Anmol Dobariya</h1>
-    <p>Surat, Gujarat | Full Stack Developer | BCA Graduate</p>
-  </div>
+    <!-- Google Fonts: Space Mono (for tech/coder vibe) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
 
-  <h2>About Me</h2>
-  <p>
-    I'm a 20-year-old Full Stack Developer from Surat, Gujarat, with a calm and thoughtful personality (INTJ). I value honesty, independence, and emotional depth in relationships. I lead a clean lifestyle — <strong>non-smoker, non-drinker</strong>, and <strong>vegetarian</strong>.
-  </p>
+    <style>
+      /* Dark Minimalist Theme */
+      body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #121212;
+        color: #e0e0e0;
+        line-height: 1.8;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        font-size: 16px;
+      }
 
-  <p>
-    I enjoy balancing a focused career with personal passions like <strong>playing darts</strong>, <strong>cricket</strong>, and diving into the world of <strong>anime, manga, and manhwa</strong>. I speak <strong>English, Gujarati, and Hindi</strong> fluently.
-  </p>
+      /* Monospace for special elements */
+      h1,
+      h2,
+      .quote,
+      code {
+        font-family: "Space Mono", monospace;
+      }
 
-  <div class="highlight">
-    "Looking for a partner to share quiet moments, big dreams, and everyday adventures — not because I need someone, but because life is better when shared."
-  </div>
+      h1 {
+        color: #0f9cf3;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+      }
 
-  <h2>Education & Career</h2>
-  <p>
-    <strong>BCA</strong> from Amity University. Currently working as a <strong>Full Stack Developer</strong> in Katargam, Surat.
-  </p>
+      h2 {
+        color: #a3ddfb;
+        border-bottom: 1px solid #333;
+        padding-bottom: 8px;
+        margin-top: 30px;
+      }
 
-  <h2>What I’m Looking For</h2>
-  <p>
-    I believe in meaningful connections over checklists. I’m looking for someone kind, emotionally mature, and clear about her values. Whether she’s into books, sports, or art — what matters most is mutual respect, good communication, and the ability to grow together.
-  </p>
-  <p>
-    Open to matches across India. Family introduction will happen when both sides feel comfortable.
-  </p>
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
-  <h2>Contact</h2>
-  <p>
-    <strong>Phone:</strong> +91 88665 98795<br>
-    <strong>Email:</strong> <a href="mailto:anmol040903@gmail.com">anmol040903@gmail.com</a>
-  </p>
-  <p><em>Photographs available upon request after initial mutual interest.</em></p>
+      .highlight {
+        background-color: #1e1e1e;
+        border-left: 4px solid #0f9cf3;
+        padding: 15px;
+        margin: 25px 0;
+        font-style: italic;
+      }
 
-  <div class="footer">
-    <p>✨ Shared with sincerity. For genuine matrimonial purposes only.</p>
-    <p>&copy; <span id="year"></span> Anmol Dobariya. Hosted on GitHub Pages.</p>
-  </div>
+      .quote {
+        font-size: 1.1em;
+        color: #bbdefb;
+      }
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+      .footer {
+        margin-top: 60px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #666;
+        border-top: 1px solid #333;
+        padding-top: 15px;
+      }
 
-</body>
+      a {
+        color: #0f9cf3;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Subtle anime/tech icon idea (emoji) */
+      .icon {
+        margin: 0 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Anmol Dobariya</h1>
+      <p>Full Stack Developer • Surat, Gujarat • BCA (Amity University)</p>
+    </div>
+
+    <h2>About Me</h2>
+    <p>
+      I'm a 21-year-old Full Stack Developer with an INTJ mindset — logical,
+      independent, and observant. I'm not the most expressive person, but I care
+      about <strong>genuine connections</strong>.
+    </p>
+
+    <div class="highlight">
+      <div class="quote">
+        "I'm not the most expressive person, but I care about having a genuine
+        connection. If you're someone who values honesty, space, and quiet
+        understanding — we might get along."
+      </div>
+    </div>
+
+    <p>
+      I lead a clean lifestyle — <strong>vegetarian</strong>,
+      <strong>non-smoker</strong>, <strong>non-drinker</strong>.<br />
+      Languages: <strong>English, Gujarati, Hindi</strong>.<br />
+      Hobbies: <span class="icon">🎯</span> Darts,
+      <span class="icon">🏏</span> Cricket, <span class="icon">📖</span> Anime,
+      Manga & Manhwa.
+    </p>
+
+    <h2>Education & Career</h2>
+    <p>
+      Background in Science (PCM), followed by BCA at Amity University.
+      Currently working as a <strong>Full Stack Developer</strong> in Surat,
+      building clean, functional systems — both in code and in life.
+    </p>
+
+    <h2>What I’m Looking For</h2>
+    <p>
+      I believe in meaningful connections over checklists. I’m looking for
+      someone kind, emotionally mature, and clear about her values. Whether
+      she’s into books, sports, or art — what matters most is mutual respect,
+      good communication, and the ability to grow together.
+    </p>
+
+    <div class="highlight">
+      <div class="quote">
+        "Relationships aren’t APIs to integrate quickly. I’d rather build one
+        slowly, with good documentation, zero bugs, and long-term support."
+      </div>
+    </div>
+
+    <h2>Contact</h2>
+    <p>
+      <strong>Phone:</strong> +91 88665 98795<br />
+      <strong>Email:</strong>
+      <a href="mailto:anmol040903@gmail.com">anmol040903@gmail.com</a>
+    </p>
+
+    <div class="footer">
+      <p>✨ Shared with sincerity. For genuine matrimonial purposes only.</p>
+      <p>
+        &copy; <span id="year"></span> Anmol Dobariya | Hosted on GitHub Pages
+      </p>
+    </div>
+
+    <script>
+      // Show letter after 90 seconds
+      setTimeout(() => {
+        const letter = document.createElement("div");
+        letter.id = "love-letter";
+        letter.style.position = "fixed";
+        letter.style.bottom = "30px";
+        letter.style.right = "30px";
+        letter.style.cursor = "pointer";
+        letter.style.opacity = "0";
+        letter.style.transition = "opacity 1s ease";
+        letter.style.zIndex = "9998";
+
+        letter.innerHTML = `
+      <div style="
+        background: linear-gradient(145deg, #1e1e1e, #121212);
+        border: 1px solid #333;
+        border-radius: 12px;
+        padding: 15px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(15, 156, 243, 0.3);
+        animation: pulse 2s infinite;
+      ">
+        <span style="font-size: 28px;">📩</span>
+      </div>
+    `;
+
+        document.body.appendChild(letter);
+
+        // Fade in after delay
+        setTimeout(() => {
+          letter.style.opacity = "1";
+          letter.style.pointerEvents = "auto";
+        }, 200);
+
+        letter.addEventListener("click", () => {
+          // Remove the letter icon when clicked
+          letter.remove();
+          showLetterModal();
+        });
+      }, 90000); // 90 seconds
+
+      function showLetterModal() {
+        const modal = document.createElement("div");
+        modal.className = "letter-modal-bg";
+        modal.innerHTML = `
+      <div class="letter-modal-card">
+        <div class="envelope-flap-anim">
+          <span class="envelope-emoji">📬</span>
+        </div>
+        <div class="letter-content-anim">
+          <h2>A Letter for You</h2>
+          <p>You stayed long enough to find this.</p>
+          <p>That tells me you’re not skimming through lives —<br>you’re actually <em>looking</em>.</p>
+          <hr>
+          <p class="letter-italic">If you'd like to know more about me —<br>share this letter’s screenshot with me.<br>I’ll answer your questions. Honestly.</p>
+          <p class="letter-note">No scripts. No filters. Just real talk.</p>
+        </div>
+      </div>
+    `;
+        document.body.appendChild(modal);
+
+        // Animate flap open, then reveal content
+        const flap = modal.querySelector(".envelope-flap-anim");
+        const content = modal.querySelector(".letter-content-anim");
+        setTimeout(() => {
+          flap.classList.add("flap-open");
+        }, 500);
+        setTimeout(() => {
+          content.classList.add("content-reveal");
+        }, 1100);
+
+        // Close modal on click
+        modal.addEventListener("click", () => {
+          document.body.removeChild(modal);
+        });
+        // Prevent closing when clicking inside modal card
+        modal
+          .querySelector(".letter-modal-card")
+          .addEventListener("click", (e) => {
+            e.stopPropagation();
+          });
+      }
+
+      // Auto-year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Add enhanced styles and animations
+      const style = document.createElement("style");
+      style.innerHTML = `
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.08); }
+      }
+      .letter-modal-bg {
+        position: fixed;
+        top: 0; left: 0; width: 100vw; height: 100vh;
+        background: radial-gradient(ellipse at center, rgba(15,156,243,0.10) 0%, rgba(18,18,18,0.98) 100%);
+        display: flex; justify-content: center; align-items: center;
+        z-index: 9999;
+        font-family: 'Open Sans', sans-serif;
+        color: #e0e0e0;
+        cursor: pointer;
+        animation: modalFadeIn 0.7s cubic-bezier(.4,2,.6,1) 1;
+      }
+      @keyframes modalFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .letter-modal-card {
+        background: #1a1a1a;
+        border-radius: 16px;
+        width: 90vw;
+        max-width: 500px;
+        padding: 30px 20px 30px 20px;
+        text-align: center;
+        box-shadow: 0 8px 30px 0 rgba(15,156,243,0.25), 0 0 40px 0 #0f9cf333;
+        position: relative;
+        overflow: hidden;
+        line-height: 1.7;
+        transform: scale(0.92);
+        animation: cardPopIn 0.7s cubic-bezier(.4,2,.6,1) 1;
+      }
+      @keyframes cardPopIn {
+        from { transform: scale(0.7) translateY(60px); opacity: 0; }
+        to { transform: scale(0.92) translateY(0); opacity: 1; }
+      }
+      .envelope-flap-anim {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100px;
+        background: linear-gradient(180deg, #23272e 80%, transparent 100%);
+        display: flex; justify-content: center; align-items: flex-start;
+        z-index: 2;
+        transform-origin: top center;
+        transition: transform 1s cubic-bezier(.4,2,.6,1);
+        box-shadow: 0 8px 30px 0 rgba(15,156,243,0.10);
+      }
+      .envelope-flap-anim .envelope-emoji {
+        font-size: 50px;
+        margin-top: 10px;
+        filter: drop-shadow(0 2px 8px #0f9cf3cc);
+        transition: filter 0.5s;
+      }
+      .flap-open {
+        transform: rotateX(-110deg) scaleY(0.7);
+        box-shadow: none;
+      }
+      .flap-open .envelope-emoji {
+        filter: drop-shadow(0 0px 0px #0f9cf3cc);
+      }
+      .letter-content-anim {
+        position: relative;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(40px) scale(0.98);
+        transition: opacity 0.7s cubic-bezier(.4,2,.6,1), transform 0.7s cubic-bezier(.4,2,.6,1);
+      }
+      .content-reveal {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0) scale(1);
+      }
+      .letter-modal-card h2 {
+        color: #0f9cf3;
+        margin-bottom: 20px;
+        font-family: 'Space Mono', monospace;
+      }
+      .letter-modal-card hr {
+        border: 1px solid #333;
+        margin: 25px 0;
+      }
+      .letter-italic {
+        font-style: italic;
+        color: #bbdefb;
+      }
+      .letter-note {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #666;
+      }
+    `;
+      document.head.appendChild(style);
+    </script>
+  </body>
 </html>
