@@ -155,49 +155,49 @@
 
     <script>
       // Show letter after 90 seconds
-      setTimeout(() => {
-        const letter = document.createElement("div");
-        letter.id = "love-letter";
-        letter.style.position = "fixed";
-        letter.style.bottom = "30px";
-        letter.style.right = "30px";
-        letter.style.cursor = "pointer";
-        letter.style.opacity = "0";
-        letter.style.transition = "opacity 1s ease";
-        letter.style.zIndex = "9998";
+    //   setTimeout(() => {
+    //     const letter = document.createElement("div");
+    //     letter.id = "love-letter";
+    //     letter.style.position = "fixed";
+    //     letter.style.bottom = "30px";
+    //     letter.style.right = "30px";
+    //     letter.style.cursor = "pointer";
+    //     letter.style.opacity = "0";
+    //     letter.style.transition = "opacity 1s ease";
+    //     letter.style.zIndex = "9998";
 
-        letter.innerHTML = `
-      <div style="
-        background: linear-gradient(145deg, #1e1e1e, #121212);
-        border: 1px solid #333;
-        border-radius: 12px;
-        padding: 15px;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 15px rgba(15, 156, 243, 0.3);
-        animation: pulse 2s infinite;
-      ">
-        <span style="font-size: 28px;">📩</span>
-      </div>
-    `;
+    //     letter.innerHTML = `
+    //   <div style="
+    //     background: linear-gradient(145deg, #1e1e1e, #121212);
+    //     border: 1px solid #333;
+    //     border-radius: 12px;
+    //     padding: 15px;
+    //     width: 60px;
+    //     height: 60px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     box-shadow: 0 4px 15px rgba(15, 156, 243, 0.3);
+    //     animation: pulse 2s infinite;
+    //   ">
+    //     <span style="font-size: 28px;">📩</span>
+    //   </div>
+    // `;
 
-        document.body.appendChild(letter);
+    //     document.body.appendChild(letter);
 
-        // Fade in after delay
-        setTimeout(() => {
-          letter.style.opacity = "1";
-          letter.style.pointerEvents = "auto";
-        }, 200);
+    //     // Fade in after delay
+    //     setTimeout(() => {
+    //       letter.style.opacity = "1";
+    //       letter.style.pointerEvents = "auto";
+    //     }, 200);
 
-        letter.addEventListener("click", () => {
-          // Remove the letter icon when clicked
-          letter.remove();
-          showLetterModal();
-        });
-      }, 90000); // 90 seconds
+    //     letter.addEventListener("click", () => {
+    //       // Remove the letter icon when clicked
+    //       letter.remove();
+    //       showLetterModal();
+    //     });
+    //   }, 90000); // 90 seconds
 
       function showLetterModal() {
         const modal = document.createElement("div");
